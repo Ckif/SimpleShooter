@@ -53,7 +53,6 @@ void AGun::PullTrigger()
 		{
 			FPointDamageEvent DamageEvent(Damage, OutHit, ShotDirection, nullptr);
 			HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
-			UE_LOG(LogTemp, Warning, TEXT("You Deal %f Damage"), Damage);
 		}
 	}
 	
